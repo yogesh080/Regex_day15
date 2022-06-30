@@ -15,6 +15,7 @@ namespace UserRegistration_Day19
 
         public string regex_for_fname = "^[A-Z]{1}[a-z]{2,10}$";
         public string regex_for_lname = "^[A-Z]{1}[a-z]{2,10}$";
+        public string regex_for_email = "^[a-zA-Z0-9._*]+@[A-Za-z0-9]+.[A-Za-z]{2,4}";
 
 
 
@@ -32,6 +33,13 @@ namespace UserRegistration_Day19
                 Console.WriteLine("Last name is correct");
             else
                 Console.WriteLine("Last name is not correct");
+        }
+        public void validateEmail(string email)
+        {
+            if(Regex.IsMatch(email, regex_for_email))
+                Console.WriteLine("email is valid");
+            else
+                Console.WriteLine("email is not valid");
         }
     }
 }

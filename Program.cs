@@ -12,6 +12,15 @@
             userRegistration.validatefirstname(Firstname);
 
 
+            Console.WriteLine("Enter the Last name:");
+            string Lastname = Console.ReadLine();
+            userRegistration.validateLastName(Lastname);
+
+            Console.WriteLine("Enter the Email address");
+            string Email = Console.ReadLine();
+            userRegistration.validateEmail(Email);
+
+
 
 
 
