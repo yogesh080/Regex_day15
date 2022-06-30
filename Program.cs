@@ -20,6 +20,10 @@
             string Email = Console.ReadLine();
             userRegistration.validateEmail(Email);
 
+            Console.WriteLine("Enter your Phone: ");
+            string Phone = Console.ReadLine();
+            userRegistration.validatePhonenumber(Phone);
+
 
 
 
